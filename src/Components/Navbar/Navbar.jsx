@@ -57,7 +57,7 @@ const Navbar = () => {
       </ul>
       <div className="nav-login-cart">
         <Link to="/signup">
-          <button>Login</button>
+          <button>Logout</button>
         </Link>
         <Link to="/cart">
           <img src={cart_icon} alt="cartlogo" />

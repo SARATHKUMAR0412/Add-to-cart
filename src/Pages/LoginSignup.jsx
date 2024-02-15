@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CSS/LoginSignup.css";
 import { Link } from "react-router-dom";
 
 const LoginSignup = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <div className="loginsignup">
       <div className="loginsignup-container">
         <h1>Sign Up</h1>
         <div className="loginsignup-fields">
-          <input type="text" placeholder="Enter  your name" />
-          <input type="email" placeholder="Enter your email" />
-          <input type="password" placeholder="Enter your password" />
+          {/* <input type="text" placeholder="Enter  your name" /> */}
+          <input type="email" placeholder="Enter your email" value={email} />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            value={password}
+          />
         </div>
         <button>Continue</button>
         <p className="loginsignup-login">

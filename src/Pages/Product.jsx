@@ -6,6 +6,7 @@ import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
 import DescriptionBox from "../Components/DescriptionBox/DescriptionBox";
 import RelatedProducts from "../Components/RelatedProducts/RelatedProducts";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 
 const Product = () =>{
@@ -14,6 +15,7 @@ const Product = () =>{
     const product = all_product.find((e) => e.id === Number(productId));
     return (
         <div>
+            <Navbar/>
             <Breadcurms product={product}/>
             <ProductDisplay product={product}/>
             <DescriptionBox product={product}/>

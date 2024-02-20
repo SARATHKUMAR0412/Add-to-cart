@@ -19,7 +19,7 @@ const Navbar = () => {
             setMenu("shop");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/">
+          <Link style={{ textDecoration: "none" }} to="/home">
             Shop
           </Link>
           {menu === "shop" ? <hr /> : <></>}
@@ -56,7 +56,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="nav-login-cart">
-        <Link to="/signup">
+        <Link to="/">
           <button>Logout</button>
         </Link>
         <Link to="/cart">

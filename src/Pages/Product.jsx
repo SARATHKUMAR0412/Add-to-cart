@@ -5,7 +5,6 @@ import Breadcurms from "../Components/Breadcrums/Breadcrums";
 import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
 import DescriptionBox from "../Components/DescriptionBox/DescriptionBox";
 import RelatedProducts from "../Components/RelatedProducts/RelatedProducts";
-import Cart from "./Cart";
 
 const Product = () =>{
     const {all_product}= useContext(ShopContext);

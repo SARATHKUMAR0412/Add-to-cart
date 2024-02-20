@@ -3,6 +3,8 @@ import "./ProductDisplay.css";
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
 import { ShopContext } from "../Context/ShopContext";
+import Footer from "../Components/Footer/Footer";
+
 
 const ProductDisplay = (props) => {
     const {product} = props;
@@ -57,6 +59,7 @@ const ProductDisplay = (props) => {
           <p className="ProductDisplay-right-category"><span>Category :</span>Women, T-shirt, Crop Top</p>
           <p className="ProductDisplay-right-category"><span>Tags :</span>Modern, Latest</p>
         </div>
+          <Footer/>
       </div>
     );
 }

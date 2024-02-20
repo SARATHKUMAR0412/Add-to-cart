@@ -45,7 +45,7 @@ const Login = () => {
           <button type="submit">Login</button>
           <p className="loginsignup-login">
             Create an Account
-            <Link to="/signup">
+            <Link to="/">
               <span>Signup</span>
             </Link>
           </p>
